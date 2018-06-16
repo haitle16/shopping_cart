@@ -8,3 +8,30 @@ footer {
     height:60px;   /* Height of the footer */
     text-align: center;
  }
+#cart{
+    margin-left: 20px;
+ }
+ tr{
+     border: 1px solid black;
+     text-align: center;
+ }
+ tr:first-child{
+     border: none;
+ }
+ 
+ td{
+     text-align: center;
+     padding: 20px;
+     border: 1px solid black;
+ }
+img{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ tbody{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+ } 

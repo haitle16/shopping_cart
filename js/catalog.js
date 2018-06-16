@@ -43,8 +43,9 @@ function handleSubmit(event) {
     // updateCounter();
     // updateCartPreview();
     /////////////////////////////////////////////////
-    if(document.getElementById('quantity').value){
          // TODO: Prevent the page from reloading
+
+    if(document.getElementById('quantity').value){
     event.preventDefault();
     // updateCounter(); // i put this here!!
     // Do all the things ...
@@ -57,9 +58,11 @@ function handleSubmit(event) {
     cartTable.appendChild(pEl);
     updateCounter();
     updateCartPreview();
-    } else{
+    }else{
         event.preventDefault();
-        updateCartPreview();
+        alert('Please input a correct number of products you want to purchase!');
+        updateCounter();
+
     }
 
 }
@@ -123,3 +126,4 @@ catalogForm.addEventListener('submit', handleSubmit);
 // Before anything else of value can happen, we need to fill in the select
 // drop down list in the form.
 populateForm();
+updateCartPreview();
