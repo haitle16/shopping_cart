@@ -10,9 +10,16 @@ Cart.prototype.addItem = function (product, quantity) {
     // TODO: Fill in this instance method to create a new CartItem and add it to this.items
 };
 
-Cart.prototype.saveToLocalStorage = function () {
-    // TODO: Fill in this instance method to save the contents of the cart to localStorage
-};
+// Cart.prototype.saveToLocalStorage = function () {
+//     // TODO: Fill in this instance method to save the contents of the cart to localStorage
+//     var totalCart = JSON.stringify(myCart);
+//     localStorage.setItem('CartSummary', totalCart)
+//     var singleCartItem;
+//     for (var i in myCart){
+//         singleCartItem = JSON.stringify(myCart[i]);
+//         localStorage.setItem('CartItem: '+i, singleCartItem)
+//     }
+// }; THIS BLOCK OF CODE IS MOVED INTO CATALOG.JS
 
 Cart.prototype.removeItem = function (item) {
     // TODO: Fill in this instance method to remove one item from the cart.
@@ -22,6 +29,7 @@ Cart.prototype.removeItem = function (item) {
 var CartItem = function (product, quantity) {
     this.product = product;
     this.quantity = quantity;
+    myCart.push(this);
 };
 
 // Product contructor.
