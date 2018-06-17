@@ -1,6 +1,3 @@
-/* html{
-    background-image: url(https://www.hdwallpapers.in/download/dark_aurora-wide.jpg);
-} */
 footer {
     position:absolute;
     bottom:0;
@@ -29,7 +26,6 @@ img{
     padding-left: 10px;
     padding-right: 10px;
  }
-
  tbody{
     padding-top: 20px;
     padding-bottom: 20px;

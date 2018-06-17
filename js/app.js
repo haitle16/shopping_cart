@@ -1,35 +1,9 @@
 'use strict';
 
-// Cart constructor.
-var Cart = function (items) {
-    // this.items is an array of CartItem instances.
-    this.items = items;
-};
-
-Cart.prototype.addItem = function (product, quantity) {
-    // TODO: Fill in this instance method to create a new CartItem and add it to this.items
-};
-
-// Cart.prototype.saveToLocalStorage = function () {
-//     // TODO: Fill in this instance method to save the contents of the cart to localStorage
-//     var totalCart = JSON.stringify(myCart);
-//     localStorage.setItem('CartSummary', totalCart)
-//     var singleCartItem;
-//     for (var i in myCart){
-//         singleCartItem = JSON.stringify(myCart[i]);
-//         localStorage.setItem('CartItem: '+i, singleCartItem)
-//     }
-// }; THIS BLOCK OF CODE IS MOVED INTO CATALOG.JS
-
-// Cart.prototype.removeItem = function (item) {
-//     // TODO: Fill in this instance method to remove one item from the cart.
-//     // Note: You will have to decide what kind of parameter to pass in here!
-// }; MOVED THESE INTO CART.JS
-
 var CartItem = function (product, quantity) {
     this.product = product;
     this.quantity = quantity;
-    myCart.push(this);
+    myCart.push(this); // push this into myCart array
 };
 
 // Product contructor.
@@ -56,7 +30,7 @@ function generateCatalog() {
     new Product('assets/scissors.jpg', 'Scissors');
     new Product('assets/shark.jpg', 'Shark');
     new Product('assets/sweep.png', 'Sweep');
-    new Product('assets/tauntaun.jpg', 'Taun-Taun');
+    new Product('assets/tauntaun.jpg', 'TaunTaun');
     new Product('assets/unicorn.jpg', 'Unicorn');
     new Product('assets/usb.gif', 'USB');
     new Product('assets/water-can.jpg', 'Water Can');
